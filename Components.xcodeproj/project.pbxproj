@@ -19,6 +19,12 @@
 		7595D46526F973FC000D0C57 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D46426F973FC000D0C57 /* CheckBox.swift */; };
 		7595D46A26F978DE000D0C57 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D46926F978DE000D0C57 /* CheckBoxView.swift */; };
 		7595D46C26F978F6000D0C57 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D46B26F978F6000D0C57 /* CheckBoxViewController.swift */; };
+		7595D47126F99111000D0C57 /* AccordionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D47026F99111000D0C57 /* AccordionProtocol.swift */; };
+		7595D47426F9915C000D0C57 /* Accordion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D47326F9915C000D0C57 /* Accordion.swift */; };
+		7595D47726F992A5000D0C57 /* AccordionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D47626F992A5000D0C57 /* AccordionStyle.swift */; };
+		7595D47A26F9B2E7000D0C57 /* CheckBoxStyleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D47926F9B2E7000D0C57 /* CheckBoxStyleDelegate.swift */; };
+		7595D47F26F9B3CC000D0C57 /* AccordionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D47E26F9B3CC000D0C57 /* AccordionView.swift */; };
+		7595D48126F9B42A000D0C57 /* AccordionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595D48026F9B42A000D0C57 /* AccordionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		7595D46426F973FC000D0C57 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		7595D46926F978DE000D0C57 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		7595D46B26F978F6000D0C57 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
+		7595D47026F99111000D0C57 /* AccordionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionProtocol.swift; sourceTree = "<group>"; };
+		7595D47326F9915C000D0C57 /* Accordion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accordion.swift; sourceTree = "<group>"; };
+		7595D47626F992A5000D0C57 /* AccordionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionStyle.swift; sourceTree = "<group>"; };
+		7595D47926F9B2E7000D0C57 /* CheckBoxStyleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyleDelegate.swift; sourceTree = "<group>"; };
+		7595D47E26F9B3CC000D0C57 /* AccordionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionView.swift; sourceTree = "<group>"; };
+		7595D48026F9B42A000D0C57 /* AccordionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,7 @@
 		7595D45E26F97159000D0C57 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7595D46E26F99053000D0C57 /* Accordion */,
 				7595D45F26F97161000D0C57 /* Buttons */,
 			);
 			path = Components;
@@ -126,6 +139,7 @@
 		7595D46026F97174000D0C57 /* CheckBox */ = {
 			isa = PBXGroup;
 			children = (
+				7595D47826F9B2CA000D0C57 /* Protocols */,
 				7595D46126F97183000D0C57 /* Style */,
 				7595D46426F973FC000D0C57 /* CheckBox.swift */,
 			);
@@ -143,6 +157,7 @@
 		7595D46626F978BF000D0C57 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				7595D47B26F9B375000D0C57 /* Accordion */,
 				7595D46D26F97CE8000D0C57 /* CheckBox */,
 			);
 			path = Example;
@@ -171,6 +186,65 @@
 				7595D46726F978C7000D0C57 /* View */,
 			);
 			path = CheckBox;
+			sourceTree = "<group>";
+		};
+		7595D46E26F99053000D0C57 /* Accordion */ = {
+			isa = PBXGroup;
+			children = (
+				7595D47526F9928A000D0C57 /* Style */,
+				7595D46F26F99070000D0C57 /* Protocol */,
+				7595D47326F9915C000D0C57 /* Accordion.swift */,
+			);
+			path = Accordion;
+			sourceTree = "<group>";
+		};
+		7595D46F26F99070000D0C57 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7595D47026F99111000D0C57 /* AccordionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7595D47526F9928A000D0C57 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				7595D47626F992A5000D0C57 /* AccordionStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		7595D47826F9B2CA000D0C57 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7595D47926F9B2E7000D0C57 /* CheckBoxStyleDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7595D47B26F9B375000D0C57 /* Accordion */ = {
+			isa = PBXGroup;
+			children = (
+				7595D47D26F9B384000D0C57 /* ViewController */,
+				7595D47C26F9B37F000D0C57 /* View */,
+			);
+			path = Accordion;
+			sourceTree = "<group>";
+		};
+		7595D47C26F9B37F000D0C57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7595D47E26F9B3CC000D0C57 /* AccordionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7595D47D26F9B384000D0C57 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7595D48026F9B42A000D0C57 /* AccordionViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,12 +319,18 @@
 			files = (
 				7595D46326F97243000D0C57 /* CheckBoxStyle.swift in Sources */,
 				7595D44826F96DEB000D0C57 /* ViewController.swift in Sources */,
+				7595D47426F9915C000D0C57 /* Accordion.swift in Sources */,
+				7595D47F26F9B3CC000D0C57 /* AccordionView.swift in Sources */,
 				7595D44426F96DEB000D0C57 /* AppDelegate.swift in Sources */,
 				7595D46A26F978DE000D0C57 /* CheckBoxView.swift in Sources */,
 				7595D44626F96DEB000D0C57 /* SceneDelegate.swift in Sources */,
+				7595D48126F9B42A000D0C57 /* AccordionViewController.swift in Sources */,
 				7595D46526F973FC000D0C57 /* CheckBox.swift in Sources */,
+				7595D47126F99111000D0C57 /* AccordionProtocol.swift in Sources */,
 				7595D45D26F96FCB000D0C57 /* NSLayoutConstraint+Extensions.swift in Sources */,
 				7595D45A26F96F59000D0C57 /* ViewCode.swift in Sources */,
+				7595D47726F992A5000D0C57 /* AccordionStyle.swift in Sources */,
+				7595D47A26F9B2E7000D0C57 /* CheckBoxStyleDelegate.swift in Sources */,
 				7595D46C26F978F6000D0C57 /* CheckBoxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

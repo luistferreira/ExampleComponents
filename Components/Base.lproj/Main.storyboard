@@ -50,9 +50,12 @@
                                         <rect key="frame" x="0.0" y="48" width="180" height="36"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="CheckBox">
+                                        <state key="normal" title="Accordion">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="accordionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7VW-qa-Jfc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -69,6 +72,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vGg-Qr-ulJ"/>
                     <connections>
+                        <outlet property="accordionButton" destination="Lub-gC-Qc1" id="Eod-va-UzR"/>
                         <outlet property="checkBoxButton" destination="tSE-vd-7jI" id="JeP-Uv-GcP"/>
                     </connections>
                 </viewController>

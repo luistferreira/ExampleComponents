@@ -7,11 +7,6 @@
 
 import UIKit
 
-public protocol CheckBoxDelegate: AnyObject {
-    func checked(_ button: CheckBox)
-    func unchecked(_ button: CheckBox)
-}
-
 open class CheckBox: UIButton {
     
     private var checkBoxStyle: CheckBoxStyle = .light

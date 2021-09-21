@@ -32,12 +32,6 @@ public enum CheckBoxStyle: Int {
     }
 }
 
-protocol CheckBoxStyleDelegate {
-    var titleColor: UIColor { get }
-    var checkedImage: UIImage { get }
-    var uncheckedImage: UIImage { get }
-}
-
 struct CheckBoxStyleLight: CheckBoxStyleDelegate {
     
     var titleColor: UIColor = .black
