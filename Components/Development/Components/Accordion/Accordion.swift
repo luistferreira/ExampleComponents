@@ -7,12 +7,8 @@
 
 import UIKit
 
-public protocol AccordionDelegate: AnyObject {
-    func didOpen(accordion: Accordion)
-    func didClose(accordion: Accordion)
-}
-
 open class Accordion: UIView {
+    
     public weak var delegate: AccordionDelegate?
     
     private let containerStackView: UIStackView = {
@@ -26,8 +22,6 @@ open class Accordion: UIView {
         let view = UIView()
         view.isUserInteractionEnabled = true
         view.backgroundColor = style.build().defaultBackgroundColor
-        view.accessibilityIdentifier = "accordion_vw"
-        
         return view
     }()
     
@@ -35,7 +29,6 @@ open class Accordion: UIView {
         let sideBarView = UIView()
         sideBarView.backgroundColor = style.build().sideBarColor
         sideBarView.isHidden = true
-        sideBarView.accessibilityIdentifier = "accordion_side_bar_vw"
         return sideBarView
     }()
     
@@ -43,7 +36,6 @@ open class Accordion: UIView {
         let divider = UIView()
         divider.backgroundColor = .blue
         divider.isHidden = true
-        divider.accessibilityIdentifier = "accordion_divider_vw"
         return divider
     }()
     
@@ -56,7 +48,6 @@ open class Accordion: UIView {
     private lazy var titleIcon: UIImageView = {
         let imageView = UIImageView()
         imageView.image = style.build().plusIcon
-        imageView.accessibilityIdentifier = "accordion_icon_im"
         return imageView
     }()
     
@@ -65,7 +56,6 @@ open class Accordion: UIView {
         label.textColor = style.build().textColor
         label.numberOfLines = 0
         label.textAlignment = .left
-        label.accessibilityIdentifier = "accordion_title_lb"
         return label
     }()
     
@@ -73,7 +63,6 @@ open class Accordion: UIView {
         let detailView = UIView()
         detailView.backgroundColor = .clear
         detailView.isHidden = true
-        detailView.accessibilityIdentifier = "accordion_detail_vw"
         return detailView
     }()
     

@@ -16,3 +16,8 @@ protocol AccordionProtocol {
     var minusIcon: UIImage { get }
     var sideBarColor: UIColor { get }
 }
+
+public protocol AccordionDelegate: AnyObject {
+    func didOpen(accordion: Accordion)
+    func didClose(accordion: Accordion)
+}

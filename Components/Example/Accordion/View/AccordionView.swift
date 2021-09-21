@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AccordionView: UIView {
+open class AccordionView: UIView {
     private let lightView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -65,15 +65,15 @@ final class AccordionView: UIView {
         buildViewCode()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         buildViewCode()
     }
 }
 
 extension AccordionView: AccordionDelegate {
-    func didOpen(accordion: Accordion) {}
-    func didClose(accordion: Accordion) {}
+    public func didOpen(accordion: Accordion) {}
+    public func didClose(accordion: Accordion) {}
 }
 
 extension AccordionView: ViewCode {
